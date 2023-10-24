@@ -10,6 +10,8 @@ the script will output a json file with all the user's found to exist
 
 note: if a username exists but is not authorized for remote login, okta will return HTTP 401 -- for this reason, I have set it up so that the username is echoed to screen before each request -- if there is a 401 response after a username, it means the username exists but is not authorized for remote login via okta
 
+additional note: I am not currently certain whether this is universally valid for all orgs using okta, or if this is specific to a particular config/implementation -- will update with more as I learn!
+
 #>
 
 $targetTenant = "tenantcode"
